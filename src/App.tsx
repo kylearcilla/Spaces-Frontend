@@ -4,8 +4,6 @@ import { BrowserRouter as Router, Switch } from "react-router-dom";
 import ProtectedRoute from "./utils/App/ProtectedRoute";
 
 function App() {
-  console.log(process.env.REACT_APP_API_KEY);
-
   return (
     <GlobalProvider>
       <Router>
