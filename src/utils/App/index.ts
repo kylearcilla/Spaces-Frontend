@@ -55,8 +55,6 @@ export const createNewSession = async (
     owner_email: email,
   };
 
-  console.log(new_session);
-
   return fetch("https://safe-depths-40988.herokuapp.com/new-session", {
     headers,
     method: "POST",
