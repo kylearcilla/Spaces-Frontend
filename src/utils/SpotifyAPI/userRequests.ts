@@ -6,7 +6,7 @@ export const getLoginURL = (scopes: string[]) => {
     "https://accounts.spotify.com/authorize?client_id=" +
     clientId +
     "&redirect_uri=" +
-    encodeURIComponent("http://localhost:3000/home/spotify") +
+    encodeURIComponent("https://spaces-app.netlify.app/home/spotify") +
     "&scope=" +
     encodeURIComponent(scopes.join(" ")) +
     "&response_type=code"
