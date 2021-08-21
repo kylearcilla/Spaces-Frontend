@@ -4,13 +4,14 @@ import "./MenuSubItems.css";
 
 // for today's sessions
 export const SessionItem: FC<{ session: any }> = ({ session }) => {
+  const medal = session.score === "gold" ? "🥇" : session.score === "silver" ? "🥈" : "🥉"
   return (
     <div className="session-item-container">
       <h1 className="session-item-title">{session.name}</h1>
       <h3 className="session-item-subtitle">{session.time_period}</h3>
       <div className="session-item-bottom-details">
         <span className="session-item-pom-details">{`${session.pomodoro_period} min × ${session.cycles}`}</span>
-        <span className="session-item-medal">{session.score}</span>
+        <span className="session-item-medal">{medal}</span>
       </div>
     </div>
   );
@@ -18,11 +19,12 @@ export const SessionItem: FC<{ session: any }> = ({ session }) => {
 
 // for this week's sessions
 export const SmallSessionItem: FC<{ session: any }> = ({ session }) => {
+  const medal = session.score === "gold" ? "🥇" : session.score === "silver" ? "🥈" : "🥉"
   return (
     <div className="session-item-container small">
       <div className="session-item-bottom-details small">
         <span className="session-item-pom-details small">{`${session.pomodoro_period} min × ${session.cycles}`}</span>
-        <span className="session-item-medal small">{session.score}</span>
+        <span className="session-item-medal small">{medal}</span>
       </div>
       <h1 className="session-item-title small">{session.name}</h1>
       <h3 className="session-item-subtitle small">{session.time_period}</h3>
@@ -32,11 +34,13 @@ export const SmallSessionItem: FC<{ session: any }> = ({ session }) => {
 
 // for this month's sessions
 export const SmallerSessionItem: FC<{session: any}> = ({ session }) => {
+  const medal = session.score === "gold" ? "🥇" : session.score === "silver" ? "🥈" : "🥉"
+
   return (
     <div className="session-item-container small smaller">
       <div className="session-item-bottom-details small smaller">
         <span className="session-item-pom-details small smaller">{`${session.pomodoro_period} min × ${session.cycles}`}</span>
-        <span className="session-item-medal small smaller">{session.score}</span>
+        <span className="session-item-medal small smaller">{medal}</span>
       </div>
       <h1 className="session-item-title small smaller">{session.name}</h1>
       <div className="session-item-details small smaller">

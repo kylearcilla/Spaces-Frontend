@@ -44,7 +44,7 @@ const MusicView: FC<{ handleRightClicked: (EventHandlerFunction) }> = ({ handleR
       headers.append("Accept", "application/json");
       const refreshToken = spotifyCreds.refreshToken;
 
-      fetch("http://localhost:3001/spotify-refresh", {
+      fetch("https://safe-depths-40988.herokuapp.com/spotify-refresh", {
         method: "POST",
         headers: headers,
         body: JSON.stringify({ refreshToken: refreshToken }),

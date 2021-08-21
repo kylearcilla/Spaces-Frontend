@@ -2,7 +2,7 @@ import moment from "moment";
 import { SessionObject } from "../../context/types";
 
 export const logInUser = async (email: string) => {
-  return fetch(`http://localhost:3001/login/${email}`, {
+  return fetch(`https://safe-depths-40988.herokuapp.com/login/${email}`, {
     method: "GET",
   })
     .then((res) => res.json())
@@ -20,7 +20,7 @@ export const registerUser = async (email: string) => {
   const headers = new Headers();
   headers.append("Content-Type", "application/json");
 
-  return fetch("http://localhost:3001/register", {
+  return fetch("https://safe-depths-40988.herokuapp.com/register", {
     headers,
     method: "POST",
     body: JSON.stringify({ email }),
@@ -55,7 +55,9 @@ export const createNewSession = async (
     owner_email: email,
   };
 
-  return fetch("http://localhost:3001/new-session", {
+  console.log(new_session);
+
+  return fetch("https://safe-depths-40988.herokuapp.com/new-session", {
     headers,
     method: "POST",
     body: JSON.stringify({ new_session }),
@@ -77,7 +79,7 @@ export const replaceAccount = async (
   headers.append("Content-Type", "application/json");
   headers.append("Authorization", `Bearer ${token}`);
 
-  return fetch("http://localhost:3001/replace", {
+  return fetch("https://safe-depths-40988.herokuapp.com/replace", {
     headers,
     method: "POST",
     body: JSON.stringify({ old_email, new_email }),
@@ -98,7 +100,7 @@ export const deleteAccount = async (email: string, token: string) => {
   headers.append("Content-Type", "application/json");
   headers.append("Authorization", `Bearer ${token}`);
 
-  return fetch("http://localhost:3001/delete", {
+  return fetch("https://safe-depths-40988.herokuapp.com/delete", {
     headers,
     method: "POST",
     body: JSON.stringify({ email }),
@@ -115,7 +117,7 @@ export const getUserSessions = async (email: string, token: string) => {
   const headers = new Headers();
   headers.append("Authorization", `Bearer ${token}`);
 
-  return fetch(`http://localhost:3001/get-sessions/${email}`, {
+  return fetch(`https://safe-depths-40988.herokuapp.com/get-sessions/${email}`, {
     headers,
     method: "GET",
   })

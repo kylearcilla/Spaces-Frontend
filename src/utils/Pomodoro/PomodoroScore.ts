@@ -36,9 +36,8 @@ export const scoreUserPerformance = (sessionObject: any) => {
   }
 
   // when user ends after pomodoro End
-  console.log(elapsed);
   if (Math.abs(elapsed) > maxTime) {
-    return "🥉";
+    return "silver";
   }
 
   const toSubtract = Math.floor((Math.abs(elapsed) / maxTime) * 100);
@@ -50,9 +49,9 @@ export const scoreUserPerformance = (sessionObject: any) => {
 // generates feedback gif and texts after a session is finished
 export const performanceFeedback = (performanceScore: string): any => {
   let performanceFeedback = {};
-  if (performanceScore === "🥇") {
+  if (performanceScore === "gold") {
     performanceFeedback = Data.pom.goldResponse;
-  } else if (performanceScore === "🥈") {
+  } else if (performanceScore === "silver") {
     performanceFeedback = Data.pom.silverResponse;
   } else {
     performanceFeedback = Data.pom.bronzeResponse;
@@ -63,16 +62,16 @@ export const performanceFeedback = (performanceScore: string): any => {
 const getMedal = (score: number, hasPassedPomEnd: boolean): string => {
   if (!hasPassedPomEnd) {
     if (score > 80 && score <= 100) {
-      return "🥇";
+      return "gold";
     } else if (score > 55 && score <= 80) {
-      return "🥈";
+      return "silver";
     } else {
-      return "🥉";
+      return "bronze";
     }
   }
 
   if (score > 70 && score <= 100) {
-    return "🥇";
+    return "gold";
   }
-  return "🥈";
+  return "silver";
 };

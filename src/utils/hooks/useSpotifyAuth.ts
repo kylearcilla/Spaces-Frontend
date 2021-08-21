@@ -7,7 +7,7 @@ const useSpotifyAuth = (code: string, callback: () => void) => {
   let credentials: any = {};
   useEffect(() => {
     if (!code || code === "") return;
-    fetch("http://localhost:3001/spotify-login", {
+    fetch("https://safe-depths-40988.herokuapp.com/spotify-login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ code }),
