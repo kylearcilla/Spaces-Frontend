@@ -1,0 +1,50 @@
+/* Side Menu Modals */
+.sessions-modal {
+  position: relative;
+}
+
+.sessions-header {
+  display: flex;
+  align-items: baseline;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.btn-highlighter.sessions-settings {
+  bottom: -10px;
+}
+
+@media screen and (max-width: 560px) {
+  .sessions-header {
+    flex-direction: column;
+  }
+}
+
+.sessions-title {
+  margin: -8px 10px 3px 0px;
+  padding: 0px;
+  font-weight: 800;
+  font-size: 25px;
+}
+
+.sessions-subtitle {
+  margin: 0px;
+  padding: 0px;
+  font-size: 13px;
+  color: #a4a4a4;
+  font-weight: 600;
+}
+
+/* For Sessions Displays Modals */
+.sessions-time-title {
+  margin: 20px 0px 15px 0px;
+  padding: 0px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #c2bfbf;
+}
+
+.sessions.sessions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 230px);
+}

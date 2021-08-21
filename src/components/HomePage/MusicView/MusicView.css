@@ -1,0 +1,58 @@
+.music-view {
+  padding: 20px 0px 20px 20px;
+  position: fixed;
+  height: 800px;
+  width: 320px;
+  margin-left: 5px;
+  transition: all 0.2s ease-in-out;
+}
+
+.music-view.isLeft {
+  margin-left: 10px;
+}
+
+.music-view.isRight {
+  padding-left: 0px;
+  height: 430px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  width: 75px;
+  margin: 0px;
+}
+
+.music-view.isLeft.isRight {
+  margin: 0px;
+}
+
+.music-view.isLoggedOff {
+  height: 40px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #18191d;
+}
+
+/* arrow button */
+.right-side-button {
+  color: rgb(33, 32, 32);
+  position: absolute;
+  left: 10px;
+  top: 8px;
+  transition: 0.2s ease-in-out all;
+  font-size: 15px;
+}
+
+.right-side-button.isClicked {
+  left: -15px;
+  color: rgb(24, 24, 24);
+  z-index: 3;
+}
+
+.right-side-button:hover {
+  color: rgb(223, 223, 223);
+}
+
+@media screen and (max-width: 950px) {
+  .right-side-button {
+    display: none;
+  }
+}

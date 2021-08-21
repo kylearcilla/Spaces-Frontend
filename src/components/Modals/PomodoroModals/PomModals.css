@@ -1,0 +1,180 @@
+/* 1. Create a New Session Modal */
+.pomodoro-new-session-period-container {
+  font-family: Poppins;
+  margin: 20px 0px 30px 0px;
+}
+
+.pom-periods-options-container {
+  color: rgb(208, 208, 208);
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 13px;
+  align-items: center;
+}
+
+.pom-periods-options-container:not(:first-child) {
+  margin-top: 10px;
+}
+
+/* More Info Hover  */
+.info-hover-container.new-session-info {
+  right: 30px;
+  top: 25px;
+}
+
+.info-hover-container.new-session-info.text {
+  right: 20px;
+}
+
+/* Session Elapsed From Given Pomodoro Values */
+.new-session-time {
+  color: #bababa;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.new-session-elapsed {
+  color: #787676;
+  font-weight: 600;
+  font-size: 13px;
+  margin-left: 13px;
+}
+
+.pomodoro-modal-buttons {
+  margin-top: 35px;
+}
+
+/* New Session Modal Drop Down Menu */
+.mini-menu.new-session {
+  position: absolute;
+  z-index: 1;
+  top: 170px;
+  right: 41px;
+}
+
+.drop-down-button.pom-dropdown {
+  width: 100px;
+}
+
+.drop-down-button.pom-dropdown.true {
+  background-color: #18171c;
+}
+
+.mini-menu.new-session {
+  padding: 18px 10px 20px 8px;
+  width: 40px;
+  right: 60px;
+  white-space: nowrap;
+}
+
+.mini-menu.new-session.breakPeriod {
+  top: 210px;
+}
+
+/* New Session Drop Down Menu Items */
+.mini-menu-item.new-session {
+  width: 20px;
+}
+
+.mini-menu-item.new-session.cycles {
+  width: 20px;
+}
+
+.mini-menu.new-session.cycles {
+  top: 248px;
+}
+
+/* 2. Finish Session Modal */
+.pomodoro-modal.finished-session {
+  font-family: Poppins;
+  color: white;
+  white-space: nowrap;
+  width: 400px;
+}
+
+.finished-session.celebration-gif {
+  margin: 15px 0px 25px 0px;
+  width: 280px;
+}
+
+.finished-session.celebration-gif.sleepy {
+  margin: 15px 0px 0px 0px;
+  width: 280px;
+}
+
+.finished-session.title {
+  margin: 5px 0px 2px 0px;
+  font-size: 25px;
+}
+
+.finished-session.subtitle {
+  margin: 5px 5px 25px 5px;
+  font-size: 13px;
+  font-weight: 400;
+  color: rgb(208, 208, 208);
+}
+
+.finished-session-time-label {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.finished-session-time-text {
+  color: #f0f0f0;
+  font-weight: 200;
+  font-size: 13px;
+  margin-left: 5px;
+}
+
+.finished-session-time-text.period {
+  color: #f0f0f0;
+}
+
+.finished-session-time-text.duration {
+  color: #acacac;
+  font-weight: 500;
+  float: right;
+  font-size: 11px;
+  margin: 6px 30px 0px 0px;
+}
+
+.finished-session-stats.title.too-early {
+  font-size: 22px;
+}
+
+.finished-session-stats.times.too-early {
+  white-space: normal;
+  text-align: center;
+  margin: 0px;
+  color: #cecece;
+  font-size: 14px;
+}
+
+.finished-session-stats.times {
+  text-align: left;
+  margin-left: 20px;
+}
+
+.finished-session-stats.score {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.finished-session-time-label.score {
+  font-size: 18px;
+}
+
+.finished-session-time-text.medal {
+  font-size: 20px;
+}
+
+.pomodoro-modal-buttons.finished-session {
+  justify-content: center;
+  margin: 25px 0px 10px 0px;
+}
+
+.button.form-submit.finishedSession {
+  width: 60%;
+  font-size: 12px;
+}

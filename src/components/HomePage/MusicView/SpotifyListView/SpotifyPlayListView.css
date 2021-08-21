@@ -1,0 +1,289 @@
+.spotify-playlist-view {
+  transition: all 0.2s ease-in-out;
+}
+
+.spotify-playlist-view.isRight {
+  width: 80px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  background-color: #18181c;
+}
+
+.spotify-playlist-view.isRight.isLoggedOff {
+  height: 20px;
+  border-bottom-left-radius: 15px;
+  background-color: transparent;
+}
+
+/* 1. Header */
+.spotify-view-top-header {
+  font-family: "Poppins";
+  background-color: #18191d;
+  transition: all 0.2s ease-in-out;
+}
+
+.spotify-view.header-container {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  color: white;
+  margin-top: 5px;
+  transition: all 0.2s ease-in-out;
+  background-color: #18191d;
+}
+
+/* Right Clicked */
+.spotify-view.header-container.minimized {
+  margin: 25px 0px 25px 18px;
+}
+
+.spotify-view.header-container.minimized.isLeft {
+  margin-left: 40px;
+}
+.spotify-view.header-container.minimized.isLeft.isLoggedOff {
+  margin-left: 30px;
+}
+
+.spotify-view.header-container.isRight {
+  margin: 25px 0px 25px 21px;
+}
+
+.spotify-view.header-container.isLoggedOff {
+  margin-top: 10px;
+}
+
+.spotify-view.header-container.isLoggedOff > i {
+  color: #363736;
+  filter: none;
+}
+
+.spotify-view.header-container.isRight.isLoggedOff > i {
+  color: #363736;
+  filter: none;
+  margin-left: -8px;
+}
+
+.spotify-view.header-container.isRight > i {
+  font-size: 1.8rem;
+}
+
+.spotify-view.header-container.isLeft.isRight > i {
+  font-size: 1.8rem;
+  margin-left: -14px;
+}
+
+.spotify-view.header-container h1 {
+  font-size: 1.135rem;
+  margin-right: 10px;
+}
+
+.spotify-view.header-container i {
+  font-size: 1.25rem;
+}
+
+/* Playlist: [PlaylistName] */
+.playlist-header-container {
+  display: flex;
+  max-width: 170px;
+}
+
+.current-spotify-playlist-name {
+  color: #bababa;
+  font-weight: 500;
+  font-size: 10px;
+  white-space: nowrap;
+}
+
+.current-spotify-playlist-name:last-child {
+  color: white;
+  font-weight: 700;
+  margin-left: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.drop-down-button.spotify-playlist-view {
+  background-color: transparent;
+  font-family: "Poppins";
+  display: flex;
+  white-space: nowrap;
+  padding: 0px;
+  font-size: 9px;
+  margin: -3px -10px 0px 0px;
+  height: 28px;
+  border-radius: 0px;
+}
+
+.drop-down-button.spotify-playlist-view span {
+  overflow: hidden;
+  display: block;
+  max-width: 70px;
+  text-overflow: ellipsis;
+}
+
+.drop-down-button.spotify-playlist-view i {
+  position: relative;
+  top: -4px;
+}
+
+.drop-down-button.spotify-playlist-view:hover {
+  background-color: transparent;
+}
+
+/* 2. Current Track */
+.current-track-img-container {
+  height: 8vw;
+  min-height: 125px;
+  margin: 20px 0px 20px 10px;
+  display: flex;
+  width: 130px;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+  border-radius: 5px;
+}
+
+.current-track-img-container.emptyTrack {
+  background-color: #111012;
+}
+
+.current-track-img-container.isLeft > img {
+  width: 6vw;
+  height: 6vw;
+  margin-left: -15px;
+}
+
+.current-track-img-container img {
+  width: 7vw;
+  height: 7vw;
+  left: 0;
+  right: 0;
+  text-align: center;
+  border-radius: 5px;
+  min-width: 125px;
+  min-height: 125px;
+}
+
+.spotify-empty-message-container {
+  font-family: "Poppins";
+  color: rgb(125, 125, 125);
+  font-weight: 600;
+  font-size: 10px;
+  margin: 20px 0px 0px 10px;
+  width: 145px;
+  margin: 20px 0px 0px 4px;
+}
+
+.spotify-empty-message:last-child {
+  margin-top: 10px;
+}
+
+.current-track-details {
+  text-align: left;
+  display: block;
+}
+
+/* Right Clicked */
+.current-track-img-container-minimized {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  width: 35px;
+  margin-left: 18px;
+  border-radius: 5px;
+  background-color: none;
+}
+
+.current-track-img-container-minimized.emptyTrack {
+  background-color: #0f0f12;
+}
+
+.current-track-img-container-minimized.isLeft {
+  margin-left: 22px;
+}
+
+.current-track-img-container-minimized > img {
+  object-fit: cover;
+  flex-shrink: 0;
+  height: 35px;
+  width: 35px;
+  border-radius: 5px;
+  margin-left: 6px;
+}
+
+/* Divider */
+.divider.side-menu-divider.spotify {
+  width: 34px;
+  margin: 20px 0px 0px 19px;
+}
+
+.divider.side-menu-divider.spotify.isLeft {
+  margin-left: 24px;
+}
+
+/* Left Clicked */
+.current-track-img-container.isLeft {
+  margin-left: 23px;
+}
+
+.current-track {
+  max-width: 150px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.current-track.title {
+  font-family: "Poppins";
+  color: #eb7bd2;
+  font-weight: 700;
+  font-size: 13px;
+  white-space: nowrap;
+  max-width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 17px;
+  margin: 0px;
+  display: block;
+}
+
+.current-track.subtitles {
+  font-family: "Poppins";
+  margin: 5px 0px 5px 0px;
+  color: white;
+  font-weight: 600;
+  font-size: 10px;
+  display: block;
+}
+
+/* 3. PlayList */
+.playlist-view-container {
+  height: 400px;
+  margin: 20px 0px 0px -7px;
+}
+
+.playlist-view-container.isRight {
+  margin-left: 8px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  width: 75px;
+  height: 280px;
+  padding: 0px;
+}
+
+.playlist-view-container.isLeft.isRight {
+  margin-left: 11px;
+}
+
+.dummy-space-spotify-playlist-view {
+  height: 80px;
+}
+
+.dummy-space-spotify-playlist-view.isRight {
+  height: 50px;
+}
+
+.infinite-scroll-component.spotify-playlist-tracks {
+  display: block;
+}

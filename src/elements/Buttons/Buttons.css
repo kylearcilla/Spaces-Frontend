@@ -1,0 +1,104 @@
+/* Regular Button for General Purposes */
+.button {
+  border: 0px;
+  background: linear-gradient(83.95deg, #9997fe 32.64%, #6a83ff 86.02%);
+  padding: 8px 18px;
+  border-radius: 20px;
+  transition: all ease-in-out 0.15s;
+  color: white;
+  cursor: pointer;
+  height: auto;
+  font-weight: 500;
+  font-family: Roboto Slab;
+}
+
+.button[disabled] {
+  background: linear-gradient(83.95deg, #8483ba 32.64%, #5967a9 81.94%);
+  cursor: auto;
+}
+
+.button:hover {
+  filter: brightness(115%);
+}
+
+/* Clear Button */
+.clear-button {
+  border: 0px;
+  background: transparent;
+  transition: all ease-in-out 0.2s;
+  cursor: pointer;
+  height: auto;
+  font-family: "Poppins";
+  font-weight: 500;
+}
+
+/* Drop Down Button */
+.drop-down-button {
+  font-size: 12px;
+  padding: 5px 30px 5px 20px;
+  background: #1b191d;
+  border-radius: 10px;
+  position: relative;
+}
+
+.drop-down-button.pom-dropdown[disabled] {
+  background: #18171c;
+}
+
+.drop-down-button:hover {
+  background-color: #18171c;
+}
+
+.drop-down-button i {
+  color: #3a3a3a;
+  margin: 5px 18px 0px 8px;
+  position: absolute;
+  right: 0px;
+}
+
+.drop-down-button.true i {
+  transition: all ease-in-out;
+  transform: rotate(-90deg);
+}
+
+/* Tab Button */
+.tab-button {
+  font-family: "Poppins";
+  font-weight: 600;
+  color: rgb(129, 129, 129);
+  padding: 0px;
+  margin-right: 25px;
+  font-size: 15px;
+}
+
+.tab-button:hover {
+  color: rgb(153, 152, 152);
+}
+
+.tab-button.clicked {
+  color: rgb(228, 228, 228);
+}
+
+/* Submit Button */
+.button.form-submit {
+  font-weight: bold;
+  width: 90%;
+  border-radius: 20px;
+  font-size: 10px;
+}
+
+.button.form-submit.cancel {
+  background: #0d0c0f;
+  font-weight: bold;
+  margin-left: 20px;
+  width: 90%;
+}
+
+/* Highligher */
+.btn-highlighter {
+  height: 3px;
+  width: 40px;
+  background-color: #9093fe;
+  transition: all ease-in-out 0.35s;
+  position: absolute;
+}

@@ -1,0 +1,13 @@
+.pomodoro-modal {
+  width: 300px;
+}
+
+.pomodoro-modal-buttons {
+  margin-top: 35px;
+  display: flex;
+}
+
+.divider.home-middle-top {
+  background-color: #202029;
+  margin: 20px 4% 0px 2.5%;
+}

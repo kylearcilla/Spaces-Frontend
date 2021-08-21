@@ -1,0 +1,110 @@
+.spotify-track-item-container {
+  width: 160px;
+  display: flex;
+  padding: 8px 5px 9px 6px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all ease-in-out 0.2s;
+  align-items: center;
+}
+
+.spotify-track-item-container:hover {
+  background-color: #111013;
+  padding: 9px 5px 9px 6px;
+  margin: 2px 0px;
+}
+
+.spotify-track-item-container.isPlaying {
+  background-color: #1f1e22;
+  padding: 9px 5px 9px 6px;
+}
+
+.spotify-track-item-container.isRight {
+  height: 33px;
+  width: 33px;
+  padding-bottom: 6px;
+  filter: brightness(55%);
+}
+
+.spotify-track-item-container.isRight.isPlaying {
+  filter: brightness(85%);
+  background-color: transparent;
+  padding: 10px 5px 10px 6px;
+}
+
+.spotify-track-item-container.isRight:hover {
+  filter: brightness(90%);
+  background-color: transparent;
+  padding: 10px 5px 10px 6px;
+}
+
+.spotify-track-img-container.isRight > .spotify-track-img {
+  height: 33px;
+  width: 33px;
+  border-radius: 3px;
+}
+
+.spotify-track-img-container.isLeft.isRight > .spotify-track-img {
+  height: 33px;
+  width: 33px;
+  border-radius: 3px;
+  margin-left: 2px;
+}
+
+.spotify-track-number {
+  font-family: "Poppins";
+  color: rgb(145, 145, 145);
+  font-size: 9px;
+  margin: 0px 6px 0px -6px;
+  font-weight: 700;
+}
+
+.spotify-track-img-container {
+  height: 40px;
+  width: 40px;
+  margin-left: 5px;
+}
+
+.spotify-track-img {
+  object-fit: cover;
+  border-radius: 5px;
+  height: 40px;
+  width: 40px;
+}
+
+.spotify-track-item-details {
+  display: block;
+  font-family: "Poppins";
+}
+
+.spotify-track-item-details.isRight {
+  display: none;
+}
+
+.track-item-title {
+  color: rgb(232, 232, 232);
+  font-size: 10px;
+  font-weight: 600;
+  margin: 0px 0px 0px 10px;
+  text-align: left;
+  line-height: 14px;
+
+  white-space: nowrap;
+  line-height: 12px;
+
+  max-width: 90px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.track-item-artist-title {
+  color: rgb(154, 154, 154);
+  font-weight: 600;
+  font-size: 9px;
+  text-align: left;
+  margin: 3px 0px 8px 10px;
+  max-width: 90px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

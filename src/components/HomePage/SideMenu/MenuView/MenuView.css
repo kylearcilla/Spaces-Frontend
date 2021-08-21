@@ -1,0 +1,17 @@
+.side-menu-view {
+  margin-top: 9px;
+}
+.side-menu-view.left-clicked {
+  margin-top: 20px;
+}
+
+.divider.side-menu-divider {
+  background-color: #252426;
+  margin: 17px 0px 10px 6px;
+  width: 92%;
+}
+
+.divider.side-menu-divider.left-clicked {
+  background-color: #252426;
+  margin: 17px 0px 20px -3px;
+}

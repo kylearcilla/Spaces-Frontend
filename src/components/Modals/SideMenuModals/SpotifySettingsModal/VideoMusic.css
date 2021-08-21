@@ -1,0 +1,247 @@
+.window-modal-container.spotify-settings {
+  height: 75%;
+  width: 60%;
+}
+
+.window-modal-container.notLoggedIn {
+  height: 45%;
+  width: 45%;
+}
+
+.video-music-top-settings {
+  color: white;
+  font-family: "Poppins";
+  position: relative;
+}
+
+/* Settings Headers */
+.video-music-settings.playlist-header {
+  display: flex;
+  align-items: baseline;
+  margin: 0px 30px 10px 0px;
+  z-index: 0;
+  justify-content: space-between;
+}
+
+.video-music-settings.playlist-header.notLoggedIn {
+  display: none;
+}
+
+.sessions-title.youtube,
+.sessions-title.spotify {
+  font-weight: 700;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+}
+
+.settings-icon {
+  font-size: 22px;
+}
+
+.settings-icon.off {
+  color: #2e2d2d;
+  filter: none;
+  background-color: transparent;
+}
+
+.settings-icon.spotify {
+  color: #81e074;
+  filter: drop-shadow(1px 0px 11px rgba(140, 223, 107, 0.28));
+  font-size: 23px;
+}
+
+.settings-icon.spotify.no-user {
+  color: #3b3b3b;
+  filter: none;
+}
+
+/* Texts */
+.video-music-subtitle {
+  font-family: "Poppins";
+  font-weight: 600;
+  color: rgb(241, 241, 241);
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+.video-music-subtitle.small {
+  color: #939393;
+  font-weight: 600;
+  font-size: 11px;
+}
+
+/* Main Settings Elements */
+.video-music-settings-profile-container {
+  display: flex;
+  margin: 20px 0px 25px 0px;
+}
+
+.video-muic-profile-img-container {
+  min-width: 96px;
+  min-height: 96px;
+  background-color: #18151b;
+  border-radius: 10px;
+  margin-right: 30px;
+}
+
+.video-music-settings-profile-img {
+  border-radius: 10px;
+}
+
+.video-music-settings-profile-img.spotify {
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+}
+
+.video-music-settings-main-settings {
+  font-size: "Poppins";
+  display: flex;
+  position: relative;
+}
+
+.video-music-settings-details.profile {
+  margin-right: 50px;
+}
+
+.video-music-settings-main-settings h4 {
+  font-weight: 600;
+  margin: 0px;
+  font-size: 9px;
+  color: #858585;
+  white-space: nowrap;
+}
+
+.video-music-settings-main-settings p {
+  font-weight: 600;
+  margin: 0px;
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  margin-top: 5px;
+}
+
+.video-music-settings-details {
+  margin-bottom: 15px;
+}
+
+/* Playlist Containter */
+.video-music-settings-playlist-container {
+  width: auto;
+  height: 230px;
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  margin-top: 25px;
+  position: relative;
+}
+
+.video-music-settings-playlist-container.notLoggedIn {
+  display: none;
+}
+
+.video-music-settings-playlist-container.spotify {
+  height: auto;
+  width: 100%;
+  margin: 15px 0px 0px -8px;
+}
+
+.infinite-scroll-component__outerdiv {
+  width: 100%;
+  overflow: auto;
+}
+
+.infinite-scroll-component {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.video-music-settings-playlist-container.spotify {
+  display: block;
+}
+
+.empty-container-text {
+  font-size: 12px;
+  font-weight: 600;
+  position: absolute;
+  color: rgb(182, 182, 182);
+}
+
+.empty-state-text-button {
+  cursor: default;
+  color: rgb(160, 160, 160);
+  font-size: 12px;
+  font-weight: 600;
+  font-family: "Poppins";
+  position: absolute;
+  right: 75px;
+  bottom: 40px;
+}
+
+.empty-container-text.spotify {
+  margin-left: 10px;
+}
+
+/* Buttons */
+.video-music-settings-btn-container {
+  position: absolute;
+  bottom: 0px;
+  width: 65%;
+}
+
+.button.settings-btn,
+.button.settings-btn {
+  margin-right: 12px;
+  padding: 9px 24px;
+  font-size: 10px;
+  background: #201d22;
+  border-radius: 10px;
+  transition: 0.14s ease-in-out all;
+  font-family: "Poppins";
+  font-weight: 600;
+  width: 160px;
+}
+
+.button.settings-btn:hover,
+.button.settings-btn:hover {
+  background: #18171a;
+}
+
+.button.youtube-playlist-choose-new {
+  background: #222124;
+  padding: 10px 25px;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: "Poppins";
+  position: absolute;
+  bottom: 40px;
+  right: 50px;
+}
+
+.button.youtube-playlist-choose-new:hover {
+  background: #181618;
+}
+
+/* Spotify Modal */
+.pomodoro-modal.spotify-logged-in {
+  text-align: center;
+}
+
+.spotify-user-signed-in-text {
+  font-family: "Poppins";
+  color: rgb(223, 223, 223);
+  font-weight: 600;
+  font-size: 13px;
+  margin-bottom: -10px;
+}
+
+.clear-button.settings-buttons.spotify {
+  position: absolute;
+  bottom: 0px;
+}
+
+.clear-button.settings-buttons.disconnect.spotify {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}

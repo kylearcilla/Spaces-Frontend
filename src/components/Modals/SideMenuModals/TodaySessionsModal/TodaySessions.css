@@ -1,0 +1,10 @@
+/* Cusomtizations */
+.window-modal-bg.today-sessions {
+  position: fixed;
+}
+
+.window-modal-container.today-sessions {
+  overflow-y: scroll;
+  height: 70%;
+  width: 65%;
+}

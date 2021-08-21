@@ -1,0 +1,23 @@
+.side-menu {
+  padding: 20px 20px 20px 20px;
+  background-color: #18181c;
+  position: fixed;
+  height: 800px;
+  width: 12%;
+  transition: all ease-in-out 0.2s;
+}
+
+.side-menu.true {
+  width: 25px;
+}
+
+.side-menu-view {
+  position: relative;
+  height: 100%;
+}
+
+@media screen and (max-width: 530px) {
+  .side-menu {
+    display: none;
+  }
+}

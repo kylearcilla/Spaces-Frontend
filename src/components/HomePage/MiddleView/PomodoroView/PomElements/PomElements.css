@@ -1,0 +1,140 @@
+/* Pomodoro Icon Button */
+.button.pom-icon-button {
+  color: white;
+  display: flex;
+  padding: 17px 17px;
+  margin-right: 12px;
+  border-radius: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all ease-in-out 0.2s;
+}
+
+.button.pom-icon-button.false {
+  background: linear-gradient(
+    270.59deg,
+    #ff8b9c -2.56%,
+    #e39ece 40.82%,
+    #a3b6ff 83.07%
+  );
+  cursor: pointer;
+}
+
+.button.pom-icon-button i {
+  position: absolute;
+  font-size: 14px;
+  left: 0;
+  right: 2px;
+  margin: 0px auto;
+  margin-bottom: 1px;
+  margin-left: 2px;
+}
+
+.button.pom-icon-button.false i {
+  margin-left: 0px;
+}
+
+.fas.fa-plus.pom-icon-button {
+  font-size: 6px;
+  left: 20px;
+  top: 18px;
+}
+
+.fas.fa-plus.pom-icon-button.true {
+  display: none;
+}
+
+.button.pom-icon-button:hover {
+  filter: brightness(115%);
+}
+
+.button.pom-icon-button.studying {
+  background: linear-gradient(
+    270.59deg,
+    #ff8b9c -2.56%,
+    #e39ece 40.82%,
+    #a3b6ff 83.07%
+  );
+  box-shadow: -1px 0px 10px 6px rgba(187, 173, 237, 0.08);
+  cursor: auto;
+}
+.button.pom-icon-button.continue {
+  background: linear-gradient(90deg, #5366ff 0%, #7876fe 100%);
+  box-shadow: -1px 0px 10px 6px rgba(120, 118, 254, 0.12);
+}
+.button.pom-icon-button.continue i {
+  animation: arrow-animation 1.3s infinite;
+}
+.button.pom-icon-button.break {
+  background: linear-gradient(90deg, #f2a18b 26%, #e9b3a5 95.5%);
+  box-shadow: -1px 0px 10px 6px rgba(255, 168, 160, 0.08);
+  cursor: auto;
+}
+.button.pom-icon-button.break i {
+  margin-left: 4px;
+}
+
+@keyframes arrow-animation {
+  0% {
+    left: -2px;
+  }
+  50% {
+    left: 3px;
+  }
+  100% {
+    left: -2px;
+  }
+}
+
+/* Session Messages */
+.pomodoro-message-container {
+  display: flex;
+  width: 25%;
+  justify-content: center;
+  align-items: center;
+}
+
+.session-message {
+  font-size: 11px;
+  font-weight: 700;
+  text-align: center;
+  height: 10px;
+  color: rgb(216, 216, 216) !important;
+  margin-left: 8%;
+}
+
+.session-name {
+  font-weight: 700;
+  font-size: 11px;
+  text-align: left;
+  margin: 6px 0px 0px 0px;
+}
+
+.session-name.true {
+  white-space: nowrap;
+  max-width: 100px;
+}
+
+.button.pom-continue-button {
+  background: linear-gradient(83.95deg, #9997fe 32.64%, #6a83ff 86.02%);
+  color: white;
+  padding: 6px 12px;
+  font-family: "Roboto Slab", serif;
+  font-size: 9px;
+  border-radius: 10px;
+  top: 1px;
+  transition: all ease-in-out 0.2s;
+}
+
+.button.pom-continue-button i {
+  color: white;
+  font-size: 8px;
+  padding-right: 7px;
+  transition: all ease-in-out 0.2s;
+}
+
+.button.pom-continue-button:hover {
+  filter: brightness(110%);
+}

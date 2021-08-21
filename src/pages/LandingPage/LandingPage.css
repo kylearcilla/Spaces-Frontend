@@ -1,0 +1,305 @@
+.landing-page {
+  width: 100%;
+  font-family: "Poppins";
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #efd0e8;
+  color: white;
+}
+
+.landing-page-section {
+  height: 770px;
+}
+
+/* First Section */
+.landing-page-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.landing-header {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px 0px 30px;
+}
+
+.landing-header-register-title:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.landing-page-section.landing {
+  background-image: url("../../elements//misc/images/landing-bg-1.png");
+  display: block;
+  align-items: center;
+  filter: brightness(103%);
+}
+
+.landing-header-register-title {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.landing-ellipse-subtitle-container {
+  display: flex;
+  align-items: baseline;
+  width: 100px;
+  margin-left: -30px;
+}
+
+.landing-container {
+  height: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.landing-ellipse-text {
+  position: absolute;
+  height: 520px;
+  width: 520px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.landing-ellipse-text h1 {
+  font-weight: bold;
+  font-size: 80px;
+  margin: 0px;
+}
+.landing-ellipse-text h4 {
+  font-weight: 600;
+  font-size: 20px;
+  margin: -10px 0px 0px 0px;
+}
+.landing-ellipse-text h5 {
+  font-weight: 400;
+  font-size: 15px;
+  margin: 25px 0px 0px 0px;
+  width: 340px;
+}
+
+.landing-ellipse-img {
+  height: 520px;
+  width: 520px;
+  filter: brightness(104%);
+}
+
+#changing-text {
+  margin-left: 5px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+#changing-text:after {
+  content: "";
+  animation: changing-text linear 20s infinite;
+}
+
+@keyframes changing-text {
+  0% {
+    content: "Studying";
+  }
+  20.3% {
+    content: "Reading";
+  }
+  28.6% {
+    content: "Sketching";
+  }
+  42.8% {
+    content: "Painting";
+  }
+  57% {
+    content: "Chilling";
+  }
+  71.2% {
+    content: "Writing";
+  }
+  82.4% {
+    content: "Learning";
+  }
+  100% {
+    content: "Meditating";
+  }
+}
+
+/* Second Section */
+.landing-page-section.app-info {
+  display: flex;
+  height: auto;
+}
+
+.app-info-text {
+  margin: 0px 0px 20px 0px;
+  font-family: "Roboto Slab";
+  width: 450px;
+  text-align: left;
+  font-size: 14px;
+  color: white;
+  font-weight: 400;
+}
+
+.app-info-text.short {
+  width: 380px;
+}
+
+.app-info-title {
+  margin-top: 55px;
+  font-size: 30px;
+}
+
+.app-info-header {
+  display: flex;
+  font-size: 15px;
+  margin-bottom: 25px;
+  align-items: center;
+}
+
+.app-info-header h1 {
+  margin: 0px;
+}
+
+.app-info-header i {
+  margin-left: 12px;
+}
+
+.app-info-left {
+  background-color: #efd0e8;
+  height: 770px;
+  width: 50%;
+  background-image: url("../../elements/misc/images/landing-graphic.png");
+}
+
+.app-info-right {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  overflow: hidden;
+  height: 770px;
+  background-image: url("../../elements/misc/images/landing-bg-2.png");
+  align-items: center;
+}
+
+.app-info-header {
+  margin-top: 0px;
+}
+
+.app-info-header.productivity {
+  margin-top: 30px;
+}
+
+/* Third Section */
+.landing-page-section.showcase.first {
+  width: 100%;
+  background-image: url("../../elements/misc/images/landing-bg-3.png");
+  display: block;
+  margin: 0px;
+  height: 800px;
+}
+
+.showcase-title {
+  padding: 70px 0px 50px 0px;
+  display: block;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.showcase-title.first {
+  padding: 70px 0px 50px 0px;
+  display: block;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.showcase-title.top {
+  padding-bottom: 100px;
+}
+.showcase-title.bottom {
+  padding-bottom: 160px;
+}
+
+.showcase-img.first {
+  width: 840px;
+}
+
+.showcase-section {
+  display: flex;
+  height: 50%;
+}
+
+/* Fourth Section */
+.landing-page-section.showcase.second {
+  background-image: url("../../elements/misc/images/landing-bg-5.png");
+  overflow: hidden;
+  height: 850px;
+}
+
+.showcase-text-contianer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.showcase-img.pic-two {
+  width: 570px;
+  height: 350px;
+}
+.showcase-img.pic-three {
+  width: 550px;
+}
+
+.showcase-img.pic-two {
+  margin: -10px 0px 0px -10px;
+}
+
+.showcase-img.pic-three {
+  margin: 0px -10px -10px 0px;
+}
+
+/* Fifth Section */
+.landing-page-section.showcase.third {
+  background-image: url("../../elements/misc/images/landing-bg-4.png");
+  overflow: hidden;
+  position: relative;
+  height: 850px;
+}
+
+.showcase-title.three-a {
+  padding-bottom: 130px;
+}
+
+.showcase-img.three-a {
+  width: 500px;
+  height: 350px;
+  margin: -10px 0px 0px -10px;
+}
+
+.showcase-img.three-b {
+  width: 600px;
+  margin: 0px -10px -10px 0px;
+}
+
+.showcase-title.three-b {
+  font-size: 25px;
+  padding-bottom: 160px;
+}
+
+.app-details {
+  font-family: "Poppins";
+  color: rgb(242, 241, 241);
+  font-size: 9px;
+  font-weight: 400;
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+}
+
+.app-details a {
+  color: rgb(242, 241, 241);
+  font-weight: 500;
+}

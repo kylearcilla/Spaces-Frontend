@@ -1,0 +1,188 @@
+/* Side Menu Item: Icon/Button + Text */
+.side-menu-item-container {
+  color: white;
+  font-family: "Poppins";
+  margin: 0px 0px 5px 2px;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: visible;
+  transition: 0.2s ease-in-out all;
+  display: flex;
+  align-items: baseline;
+}
+
+.button.clear-button.side-menu-item {
+  padding: 6px 13px 6px 13px;
+  background-color: transparent;
+  border-radius: 10px;
+  font-size: 12px;
+  margin: 3px 2px 0px -8px;
+}
+
+.button.clear-button.session-stats {
+  padding: 6px 12px;
+}
+
+.button.clear-button.settings {
+  padding: 6px 11px;
+}
+
+.side-menu-item-icon {
+  font-size: 10px;
+}
+
+.side-menu-item-text {
+  margin: auto 0px;
+  font-size: 12px;
+  font-weight: 600;
+  overflow: hidden;
+  margin-top: 9px;
+  margin-left: -1px;
+}
+
+.side-menu-item-container.not-left-clicked.isClicked {
+  padding: 0px 10px 0px 10px;
+  background-color: #121215;
+  border-radius: 13px;
+  margin-left: -7px;
+}
+
+.side-menu-item-container.not-left-clicked:hover {
+  padding: 0px 10px 0px 9px;
+  background-color: #141417;
+  border-radius: 13px;
+  margin-left: -6px;
+}
+
+/* Quote Box */
+.quote-box-container {
+  position: absolute;
+  bottom: 190px;
+  background-color: #161517;
+  border-radius: 13px;
+  font-family: "Poppins";
+  padding: 12px 19px 15px 19px;
+  text-align: left;
+  height: auto;
+}
+
+.quote-box-container.true {
+  display: none;
+}
+
+.quote-box-heading {
+  display: flex;
+}
+
+.quote-box-heading .title {
+  color: rgb(230, 230, 230);
+  font-size: 12px;
+  margin: 6px 0px 0px 0px;
+  font-weight: 900;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.emoji {
+  font-size: 14px;
+  margin: 0px 0px 13px 8px;
+}
+
+.quote-box-container p {
+  color: #a2a2a2;
+  margin-top: 8px;
+  font-weight: 600;
+  font-size: 10px;
+}
+
+/* When Left Side Bard is Minimized */
+.side-menu-item-text.left-clicked {
+  display: none;
+}
+
+.side-menu-item-container.left-clicked.isClicked {
+  background-color: transparent;
+}
+
+.side-menu-item-container.left-clicked
+  > .side-menu-item-icon
+  > .button.clear-button {
+  background-color: #212124;
+  border-radius: 8px;
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+
+.side-menu-item-container.left-clicked:hover
+  > .side-menu-item-icon
+  > .button.clear-button {
+  background-color: #101012;
+}
+
+.side-menu-item-container.left-clicked.isClicked
+  > .side-menu-item-icon
+  > .button.clear-button {
+  background-color: #101012;
+}
+
+/* Button Types: Icons */
+.button.clear-button.side-menu-item.today-session {
+  color: #6d8bf8;
+}
+
+.button.clear-button.side-menu-item.session-stats {
+  color: #c77eda;
+}
+
+.button.clear-button.side-menu-item.settings {
+  color: #6eb8fc;
+  margin-right: 5px;
+}
+
+.button.clear-button.side-menu-item.youtube-settings > i {
+  font-size: 14px;
+  color: #e4638c;
+  background-color: rgb(38, 33, 38);
+  margin-left: -1px;
+  width: 7px;
+  height: 5px;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+}
+
+.button.clear-button.side-menu-item.spotify-settings > i {
+  font-size: 14px;
+  color: #89f6a7;
+  margin-left: -2px;
+}
+
+.button.clear-button.side-menu-item.youtube-settings,
+.button.clear-button.side-menu-item.spotify-settings {
+  width: 37px;
+}
+
+/* Button Types: Texts */
+.side-menu-item-text {
+  font-weight: 700;
+}
+
+.side-menu-item-text.today-session {
+  color: #8ea4f5;
+}
+
+.side-menu-item-text.session-stats {
+  color: #d99fe8;
+}
+
+.side-menu-item-text.settings {
+  color: #88c2f9;
+}
+
+.side-menu-item-text.youtube-settings {
+  color: #e994bc;
+}
+
+.side-menu-item-text.spotify-settings {
+  color: #89f6a7;
+}

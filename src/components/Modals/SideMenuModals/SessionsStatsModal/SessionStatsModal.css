@@ -1,0 +1,37 @@
+.window-modal-container.sesions-stats-sessions {
+  height: 75%;
+  width: 70%;
+  position: fixed;
+  overflow-y: scroll;
+}
+
+.btn-highlighter.sessions-stats.false {
+  bottom: -13px;
+  width: 65px;
+  left: 0px;
+}
+
+.btn-highlighter.sessions-stats.true {
+  bottom: -13px;
+  width: 65px;
+  left: 105px;
+  background-color: #f37697;
+}
+
+/* Sessions Grid */
+.sessions-time-title.small {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 17px;
+  font-family: "Poppins";
+  color: rgb(212, 212, 212);
+}
+
+.sessions-tab-header.sessions-stats {
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.sessions.sessions-grid.small {
+  grid-template-columns: repeat(auto-fit, 150px);
+}

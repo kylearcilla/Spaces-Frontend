@@ -1,0 +1,56 @@
+.window-modal-container.youtube-settings {
+  height: 70%;
+  width: 60%;
+}
+
+.video-music-settings-main-settings.youtube {
+  width: 100%;
+}
+
+.settings-icon.youtube {
+  color: #df6363;
+  filter: drop-shadow(1px 0px 11px rgba(223, 107, 107, 0.28));
+  margin: 0px 0px -4px 8px;
+  font-size: 22px;
+  width: 7px;
+  height: 10px;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+  transition: 0.2 all ease-in-out;
+}
+
+.settings-icon.youtube.loggedOff {
+  filter: none;
+  background: none;
+  color: #3b3b3b;
+}
+
+.video-music-settings-buttons-display {
+  position: absolute;
+  bottom: 0px;
+  left: -5px;
+  display: flex;
+  width: 100%;
+  min-width: 500px;
+}
+
+.clear-button.settings-buttons {
+  font-family: "Poppins";
+  color: rgb(104, 104, 104);
+  font-size: 10px;
+  transition: all ease-in-out 0.1s;
+  white-space: nowrap;
+  margin-right: 13px;
+}
+
+.clear-button.settings-buttons.disconnect {
+  color: rgba(240, 143, 143, 0.81);
+  position: absolute;
+  right: 0px;
+}
+
+.clear-button.settings-buttons:hover {
+  filter: brightness(125%);
+}

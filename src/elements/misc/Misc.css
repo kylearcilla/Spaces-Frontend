@@ -1,0 +1,76 @@
+/* Hover Info Pop Up */
+.info-hover-container {
+  color: #d6d6d6;
+  position: absolute;
+  z-index: 3;
+}
+
+.info-hover-icon {
+  background-color: #0d0d0e;
+  padding: 5px;
+  width: 20px;
+  border-radius: 20px;
+  transition: 0.2s all ease-in-out;
+  border: 6px solid;
+  border-color: #141215;
+}
+
+.info-hover-icon:hover {
+  background-color: #1f1f22;
+  cursor: default;
+}
+
+.info-hover-icon:hover + .info-hover-text {
+  display: block;
+}
+
+.info-hover-text:hover {
+  display: block;
+}
+
+.info-hover-text {
+  font-family: "Poppins";
+  font-size: 11px;
+  padding: 10px 25px 10px 25px;
+  text-align: left;
+  min-width: 200px;
+  font-weight: 500;
+  display: none;
+  position: absolute;
+
+  background-color: #17161a;
+  border-radius: 10px;
+}
+
+/* App Logo */
+.app-logo {
+  display: flex;
+  color: white;
+  margin: 0px;
+  padding: 0px;
+  align-items: baseline;
+  margin-top: -5px;
+}
+
+.app-logo.title {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.app-logo.dot {
+  color: #ffa8a0;
+  font-size: 30px;
+}
+
+/* Error Details */
+.error-details {
+  color: #fc7a8d;
+  font-size: 13px;
+  width: 100%;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.error-details.false {
+  display: none;
+}

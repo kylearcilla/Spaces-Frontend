@@ -1,0 +1,188 @@
+/* 1. Spotify Controls */
+.spotify-player-controls {
+  position: absolute;
+  bottom: 0px;
+  width: 330px;
+  height: 190px;
+  left: 0px;
+  background: rgba(40, 36, 40, 0.47);
+  backdrop-filter: blur(18px);
+  z-index: 2;
+  transition: none;
+  margin-left: -5px;
+}
+
+.spotify-player-controls.isLeft {
+  margin-left: -10px;
+}
+
+.spotify-player-container {
+  padding: 22px 0px 15px 22px;
+}
+
+/* Spotify Controls: Buttons */
+.spotify-buttons-container {
+  text-align: left;
+  display: flex;
+  position: relative;
+  width: 180px;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s ease-in-out all;
+}
+
+.spotify-buttons-container.isLeft {
+  width: 195px;
+}
+
+.clear-button.spotify-btn[disabled] {
+  background: none;
+}
+
+.clear-button.spotify-btn {
+  padding: 0px;
+}
+
+.clear-button.spotify-btn:hover {
+  color: rgb(135, 135, 135);
+}
+
+.spotify-btn.random-btn:hover {
+  filter: brightness(110%);
+}
+
+.spotify-main-buttons {
+  align-items: center;
+  justify-content: center;
+  margin-right: 25px;
+}
+
+.spotify-btn.volume-btn {
+  top: 3px;
+  font-size: 10px;
+  left: 0px;
+  position: absolute;
+  color: rgb(255, 255, 255);
+}
+
+.spotify-btn.random-btn {
+  top: 3px;
+  font-size: 11px;
+  right: 14px;
+  position: absolute;
+  color: rgb(121, 121, 121);
+}
+
+.spotify-btn.random-btn.isShuffled {
+  color: white;
+}
+
+.spotify-btn.play-btn {
+  font-size: 11px;
+  margin: 0px 8px;
+}
+
+.spotify-btn.back-btn,
+.spotify-btn.forward-btn {
+  font-size: 9px;
+}
+
+/* Spotify Controls: Progress Bar */
+.spotify-progress-container {
+  display: block;
+  width: 150px;
+  margin-top: 15px;
+  transition: 0.1s ease-in-out all;
+}
+
+.spotify-progress-container.isLeft {
+  display: block;
+  width: 170px;
+}
+
+.spotify-progress-bar-container {
+  display: flex;
+  margin-left: -2px;
+}
+
+.spotify-time-container {
+  display: flex;
+  width: 150px;
+  justify-content: space-between;
+}
+
+.spotify-time-container.isLeft {
+  display: flex;
+  width: 170px;
+  justify-content: space-between;
+}
+
+.spotify-time {
+  color: rgb(216, 216, 216);
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 9px;
+  margin-top: 10px;
+}
+
+/* 4. Mini Spotify Controls */
+.spotify-player-controls.mini {
+  width: 75px;
+  margin: 0px;
+  height: 100px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.spotify-player-controls.mini.isLeft {
+  width: 80px;
+}
+
+.spotify-time-container.mini {
+  display: flex;
+  justify-content: center;
+  width: 75px;
+}
+
+.spotify-time-container.mini.isLeft {
+  margin-left: 1px;
+}
+
+.spotify-time.mini {
+  font-size: 8px;
+}
+
+.spotify-time-container.mini {
+  margin: 0px 0px 4px -2px;
+}
+
+.spotify-player-container.mini {
+  padding: 0px;
+}
+
+/* Button Container */
+.spotify-buttons-container.mini {
+  width: 60px;
+  margin: 8px 0px 0px 12px;
+}
+
+.spotify-buttons-container.mini.isLeft {
+  margin-left: 16px;
+}
+
+.spotify-main-buttons.mini {
+  margin: 0px 0px 0px -13px;
+}
+
+.spotify-btn.play-btn.mini {
+  font-size: 10px;
+  margin: 0px 5px;
+}
+
+.spotify-btn.forward-btn.mini {
+  font-size: 7px;
+}
+
+.spotify-btn.back-btn.mini {
+  font-size: 7px;
+}

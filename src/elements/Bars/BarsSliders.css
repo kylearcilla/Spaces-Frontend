@@ -1,0 +1,70 @@
+/* 1. Music Ratio Volume Slider */
+.volume-slider-container {
+  display: flex;
+  width: 100%;
+}
+
+/* outline */
+.volume-slider {
+  overflow: hidden;
+  -webkit-appearance: none;
+  border-radius: 25px;
+  height: 4px;
+  width: 100%;
+  background: linear-gradient(270.59deg, #aaf0cf -10.17%, #6a83ff 99.44%);
+  box-shadow: -1px 0px 10px 6px rgba(187, 173, 237, 0.08);
+  outline: none;
+  margin: 7px 10px 0px 10px;
+  overflow: visible;
+}
+
+/* circle */
+.volume-slider::-webkit-slider-thumb {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  -webkit-appearance: none;
+  height: 10px;
+  cursor: default;
+  background: white;
+}
+
+/* track */
+.volume-slider::-webkit-slider-runnable-track {
+  height: 10px;
+  -webkit-appearance: none;
+  margin-top: -1px;
+  border-radius: 10px;
+}
+
+.volume-slider-container {
+  display: flex;
+  width: 100%;
+}
+.volume-slider {
+  overflow: hidden;
+  -webkit-appearance: none;
+  border-radius: 25px;
+  height: 4px;
+  width: 100%;
+  background: linear-gradient(270.59deg, #aaf0cf -10.17%, #6a83ff 99.44%);
+  box-shadow: -1px 0 10px 6px rgba(187, 173, 237, 0.08);
+  outline: 0;
+  margin: 7px 10px 0 10px;
+  overflow: visible;
+}
+.volume-slider::-webkit-slider-thumb {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  -webkit-appearance: none;
+  height: 10px;
+  cursor: default;
+  background: #fff;
+}
+.volume-slider::-webkit-slider-runnable-track {
+  height: 10px;
+  -webkit-appearance: none;
+  margin-top: -1px;
+  border-radius: 10px;
+}

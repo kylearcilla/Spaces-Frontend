@@ -1,0 +1,67 @@
+.spotify-playlist-card {
+  cursor: pointer;
+  display: flex;
+  transition: 0.15s ease-in-out all;
+  margin: 0px 10px 5px 0px;
+  border-radius: 8px;
+}
+
+.spotify-playlist-card.notClicked.chosen {
+  cursor: default;
+  background-color: #181618;
+}
+
+.spotify-playlist-card.notChosen:hover,
+.spotify-playlist-card.clicked {
+  background-color: rgb(11, 10, 11);
+}
+
+.spotify-playlist-card {
+  cursor: pointer;
+  display: flex;
+}
+
+.spotify-playlist-card-img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  padding: 0px;
+  margin: 15px 15px 20px 15px;
+  border-radius: 3px;
+}
+
+.spotify-playlist-card-details {
+  display: block;
+  font-family: Poppins;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.spotify-playlist-card-details h1,
+.spotify-playlist-card-details p {
+  margin: 0px;
+}
+
+.spotify-playlist-card-title {
+  color: white;
+  font-size: 12px;
+  padding-bottom: 4px;
+  max-width: 200px;
+  white-space: nowrap;
+}
+
+.spotify-playlist-card-item-count {
+  color: #939393;
+  font-size: 10px;
+}
+
+.spotify-playlist-card-description {
+  font-weight: 500;
+  color: #9a9a9a;
+  font-size: 10px;
+  margin-top: 10px !important;
+  max-width: 200px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
