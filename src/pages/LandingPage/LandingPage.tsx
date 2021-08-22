@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { GlobalContext } from "../../context/GlobalState";
 import { logInUser, registerUser } from "../../utils";
 import { AppLogo, ellipse, picOne, picTwo, picThree, picFour, picFive, Data } from "../../elements";
@@ -6,6 +6,7 @@ import "./LandingPage.css";
 
 const LandingPage = () => {
   const { loginOrRegister, googleLogin } = useContext(GlobalContext);
+  const [showingVid, setShowingVid] = useState(false);
 
   const handleRegister = (email: string) => {
     registerUser(email).then(() => {
@@ -64,8 +65,11 @@ const LandingPage = () => {
       </section>
       <section className="landing-page-section showcase first landing-page-img">
         <span className="showcase-title first">Everything you need all in one place!</span>
-        {/* <iframe width="560" height="315" src="https://www.youtube.com/embed/BUzGeg-cn58" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe> */}
-        <img src={picOne} className="showcase-img first" alt="showcase-1" />
+        <button className={`showcase-title-toggle-btn ${setShowingVid}`} onClick={() => setShowingVid(!showingVid)}>Toggle Showcase Video</button>
+        <div className="showcase-container">
+          {showingVid ? <iframe title="yt-player" className="showcase-video" src="https://www.youtube.com/embed/5DKR02RRj4Q"></iframe> :   
+          <img src={picOne} className="showcase-img first" alt="showcase-1" />}
+        </div>
       </section>
       <section className="landing-page-section showcase second landing-page-img">
         <div className="showcase-section">

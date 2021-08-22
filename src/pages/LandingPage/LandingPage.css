@@ -198,7 +198,7 @@
   background-image: url("../../elements/misc/images/landing-bg-3.png");
   display: block;
   margin: 0px;
-  height: 800px;
+  height: 840px;
 }
 
 .showcase-title {
@@ -209,10 +209,35 @@
 }
 
 .showcase-title.first {
-  padding: 70px 0px 50px 0px;
+  padding: 70px 0px 30px 0px;
   display: block;
   font-weight: 600;
   font-size: 25px;
+}
+
+.showcase-video {
+  margin-top: 10px;
+  width: 800px;
+  height: 500px;
+  border: none;
+  border-radius: 5px;
+}
+
+.showcase-title-toggle-btn {
+  height: 10px;
+  background-color: transparent;
+  border: 0px;
+  color: rgb(132, 105, 228);
+  font-weight: 600;
+  font-size: 15px;
+  font-family: "Poppins";
+  cursor: pointer;
+  transition: 0.2s ease-in-out all;
+  margin-bottom: 70px;
+}
+
+.showcase-title-toggle-btn:hover {
+  color: rgb(245, 209, 243);
 }
 
 .showcase-title.top {
