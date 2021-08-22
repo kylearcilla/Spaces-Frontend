@@ -64,6 +64,7 @@ const LandingPage = () => {
       </section>
       <section className="landing-page-section showcase first landing-page-img">
         <span className="showcase-title first">Everything you need all in one place!</span>
+        {/* <iframe width="560" height="315" src="https://www.youtube.com/embed/BUzGeg-cn58" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe> */}
         <img src={picOne} className="showcase-img first" alt="showcase-1" />
       </section>
       <section className="landing-page-section showcase second landing-page-img">

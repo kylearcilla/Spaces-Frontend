@@ -42,7 +42,7 @@ export const RenameModal: FC<RenameModalProps> = ({ handleCloseModal }) => {
             <Button
               isDisabled={values.newSessionName === "" || values.newSessionName.length > 16}
               name={"Submit"}
-              onHandleClick={() => handleSubmitButton}
+              onHandleClick={handleSubmitButton}
               type={"form-submit newSessionName"}
             ></Button>
             <Button
